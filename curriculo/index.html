@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Jordan Souza — Currículo</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+    color: #1c1f2a;
+    background: #ffffff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    display: grid;
+    grid-template-columns: 68mm 1fr;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    background: #0d1424;
+    color: #e8ecf5;
+    padding: 14mm 9mm;
+  }
+  .photo {
+    width: 32mm; height: 32mm; border-radius: 50%;
+    object-fit: cover; object-position: center 20%;
+    border: 3px solid #7c9eff;
+    display: block; margin: 2mm auto 8mm;
+  }
+  .sidebar h2 {
+    font-size: 10pt; text-transform: uppercase; letter-spacing: 0.06em;
+    color: #7fd8c4; margin: 7mm 0 3.5mm;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    padding-bottom: 2mm;
+  }
+  .sidebar h2:first-of-type { margin-top: 0; }
+  .contact-list { list-style: none; padding: 0; margin: 0; font-size: 9pt; line-height: 1.85; word-break: break-word; }
+  .contact-list li { margin-bottom: 1.5mm; color: #c3cae0; }
+  .contact-list .label { display: block; font-size: 7.6pt; color: #7fd8c4; text-transform: uppercase; letter-spacing: 0.04em; }
+
+  .skill-block { margin-bottom: 4.5mm; }
+  .skill-block .cat { font-size: 8.4pt; font-weight: 700; color: #eef0f7; margin-bottom: 1.8mm; }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 1.8mm; }
+  .skill-tag {
+    font-size: 7.7pt; padding: 1.1mm 2.6mm; border-radius: 3mm;
+    background: rgba(124,158,255,0.18); color: #b9c8ff;
+    border: 0.5px solid rgba(124,158,255,0.4);
+  }
+
+  .links-list { list-style: none; padding: 0; margin: 0; font-size: 8.6pt; line-height: 2; }
+  .links-list a { color: #9fd6ff; text-decoration: none; }
+
+  /* Main */
+  .main { padding: 15mm 13mm; }
+  .name { font-size: 22pt; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 1.8mm; color: #0d1424; }
+  .role { font-size: 11.5pt; font-weight: 600; color: #4a5a8c; margin: 0 0 7mm; }
+
+  .main section { margin-bottom: 7mm; }
+  .main h3 {
+    font-size: 10.4pt; text-transform: uppercase; letter-spacing: 0.05em;
+    color: #4a5a8c; margin: 0 0 3.5mm;
+    border-bottom: 1.2px solid #dde2f0; padding-bottom: 1.8mm;
+  }
+  .summary { font-size: 9.7pt; line-height: 1.7; color: #333846; margin: 0; }
+
+  .entry { margin-bottom: 5mm; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .entry-title { font-size: 10.1pt; font-weight: 700; color: #0d1424; }
+  .entry-org { font-size: 9.5pt; font-weight: 600; color: #4a5a8c; margin-bottom: 0.8mm; }
+  .entry-date { font-size: 8.3pt; color: #8891a5; white-space: nowrap; }
+  .entry ul { margin: 2mm 0 0; padding-left: 4mm; font-size: 9.1pt; color: #333846; line-height: 1.6; }
+  .entry ul li { margin-bottom: 1.1mm; }
+
+  .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5.5mm; }
+  .proj-card { border: 1px solid #e2e6f2; border-radius: 2.5mm; padding: 4mm; }
+  .proj-card .p-title { font-size: 9.7pt; font-weight: 700; color: #0d1424; margin-bottom: 1.5mm; }
+  .proj-card .p-desc { font-size: 8.5pt; color: #4a5568; line-height: 1.55; margin-bottom: 2.5mm; }
+  .proj-card .p-stack { font-size: 7.6pt; color: #7c6ad6; font-weight: 600; }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <aside class="sidebar">
+    <img class="photo" src="../imagens/Jordan.jpeg" alt="Jordan Souza">
+
+    <h2>Contato</h2>
+    <ul class="contact-list">
+      <li><span class="label">Telefone</span>+55 21 96020-4688</li>
+      <li><span class="label">E-mail</span>jordan.developerbr@outlook.com</li>
+      <li><span class="label">Localização</span>Rio de Janeiro, Brasil</li>
+    </ul>
+
+    <h2>Links</h2>
+    <ul class="links-list">
+      <li><a href="https://jordansouzadev.github.io">jordansouzadev.github.io</a></li>
+      <li><a href="https://github.com/jordansouzadev">github.com/jordansouzadev</a></li>
+      <li><a href="https://www.linkedin.com/in/jordan-souza19">linkedin.com/in/jordan-souza19</a></li>
+    </ul>
+
+    <h2>Habilidades técnicas</h2>
+    <div class="skill-block">
+      <div class="skill-tags">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">FastAPI</span>
+        <span class="skill-tag">SQLAlchemy</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">Tailwind</span>
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">JWT / Auth</span>
+        <span class="skill-tag">Git</span>
+      </div>
+    </div>
+
+    <h2>Suporte &amp; atendimento</h2>
+    <div class="skill-block">
+      <div class="skill-tags">
+        <span class="skill-tag">Suporte técnico N1/N2</span>
+        <span class="skill-tag">Troubleshooting</span>
+        <span class="skill-tag">Atendimento ao cliente</span>
+        <span class="skill-tag">Supervisão de equipe</span>
+        <span class="skill-tag">Ambiente crítico</span>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="name">Jordan Souza</div>
+    <div class="role">Analista de Suporte TI &nbsp;|&nbsp; Full Stack Developer (Python · React)</div>
+
+    <section>
+      <h3>Resumo</h3>
+      <p class="summary">Analista de Suporte TI com mais de 5 anos de experiência em ambientes corporativos e hospitalares de alta criticidade, incluindo período como supervisor de equipe. Em paralelo, atua como desenvolvedor full stack, tendo projetado e construído dois sistemas web completos em produção — do modelo de dados ao painel administrativo — com Python/FastAPI no backend e React/TypeScript no frontend. Cursando Análise e Desenvolvimento de Sistemas na UNASP.</p>
+    </section>
+
+    <section>
+      <h3>Experiência profissional</h3>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Analista de Suporte TI</span>
+          <span class="entry-date">Jul/2026 — atual</span>
+        </div>
+        <div class="entry-org">Miami IT</div>
+        <ul>
+          <li>Atuação em projeto de suporte para a Atos, no prédio da Enel</li>
+          <li>Suporte técnico em ambiente corporativo de cliente</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Analista de Suporte TI</span>
+          <span class="entry-date">5 anos</span>
+        </div>
+        <div class="entry-org">Hospital Adventista Silvestre</div>
+        <ul>
+          <li>Suporte técnico em ambiente hospitalar de alta criticidade por 5 anos</li>
+          <li>Atuou como supervisor da equipe de suporte durante parte do período</li>
+          <li>Amplo conhecimento em diagnóstico, atendimento e resolução de problemas de TI</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h3>Formação</h3>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Análise e Desenvolvimento de Sistemas</span>
+          <span class="entry-date">Previsão: 2027</span>
+        </div>
+        <div class="entry-org">UNASP — Centro Universitário Adventista de São Paulo</div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Projetos em destaque</h3>
+      <div class="proj-grid">
+        <div class="proj-card">
+          <div class="p-title">Ariane Paiva Studio</div>
+          <div class="p-desc">Site institucional e agendamento online para estúdio de beleza, com disponibilidade validada no backend e painel administrativo completo.</div>
+          <div class="p-stack">React · TypeScript · FastAPI · PostgreSQL</div>
+        </div>
+        <div class="proj-card">
+          <div class="p-title">Iron Manager</div>
+          <div class="p-desc">Plataforma SaaS de gestão para academias, backend em Clean Architecture com cobertura de testes automatizados.</div>
+          <div class="p-stack">Python · FastAPI · SQLAlchemy · Docker</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</div>
+
+</body>
+</html>
