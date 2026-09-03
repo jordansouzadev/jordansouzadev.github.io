@@ -168,6 +168,11 @@
 
   /* About */
   .about-grid { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 64px; }
+  .about-photo {
+    width: 132px; aspect-ratio: 3 / 4; border-radius: 8px; overflow: hidden;
+    border: 1px solid var(--rule); margin-bottom: 22px; background: var(--paper-alt);
+  }
+  .about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
   .about-lead { font-size: 1.05rem; color: var(--ink); line-height: 1.6; margin: 0 0 18px; }
   .about-grid p.body { color: var(--muted); font-size: 0.96rem; }
   .checklist { display: flex; flex-direction: column; border-top: 1px solid var(--rule); }
@@ -298,6 +303,9 @@
     </div>
     <div class="about-grid">
       <div class="reveal-up">
+        <div class="about-photo">
+          <img src="imagens/jordan-portrait.jpg" alt="Foto de Jordan Souza">
+        </div>
         <p class="about-lead">Depois de anos resolvendo incidentes em ambientes que não podem parar — hospital, cliente corporativo — aprendi que "funcionou aqui" não é resposta. É preciso confirmar a causa raiz, testar de verdade, documentar e só então considerar resolvido.</p>
         <p class="body">Apliquei essa mesma disciplina no sistema que construí do zero até produção real: um motor de agendamento para um estúdio de beleza, com autenticação, testes automatizados e documentação completa.</p>
       </div>
