@@ -1,6 +1,6 @@
 # Meu Portfólio
 
-Site de portfólio pessoal — HTML, CSS e JavaScript puro, sem dependências externas. Um único arquivo (`index.html`) + pasta `imagens/`, fácil de editar e publicar.
+Site de portfólio pessoal — HTML, CSS e JavaScript puro, sem dependências externas além das fontes do Google Fonts. Um único arquivo (`index.html`), pasta `imagens/` e o currículo em `curriculo/`.
 
 ## Como visualizar
 
@@ -8,35 +8,18 @@ Basta abrir `index.html` no navegador (duplo clique).
 
 ## Como personalizar
 
-Tudo está em `index.html`:
+- **Textos**: seções "Sobre", "Projeto" e "Skills" estão em texto simples dentro de `index.html`.
+- **Projeto em destaque**: hoje mostra só o Ariane Paiva Studio (único projeto em produção). Pra adicionar outro, duplique o bloco `<div class="project-frame">` dentro da seção `#projeto`.
+- **Cores**: no topo do arquivo, dentro de `<style>`, as variáveis em `:root` (`--paper`, `--ink`, `--accent`, etc.) controlam a paleta.
+- **Contato**: seção `#contato`, dentro de `.contact-fields`.
+- **Currículo**: `curriculo/index.html` é a fonte (abrir e exportar como PDF via Ctrl+P) que gera `curriculo/Jordan_Souza_Curriculo.pdf`, referenciado pelos botões "Currículo" do site.
+- **Foto** (usada só no currículo): `imagens/Jordan.jpeg`.
 
-- **Textos**: seção "Sobre", descrições dos projetos e skills estão em texto simples no HTML.
-- **Projetos**: cada projeto é um bloco `<article class="project-card">` — copie um bloco existente para adicionar um novo projeto.
-- **Cores**: no topo do arquivo, dentro de `<style>`, as variáveis em `:root` (`--bg`, `--accent`, etc.) controlam a paleta.
-- **Contato**: seção `#contato`, links de e-mail, GitHub, LinkedIn e WhatsApp.
-- **Foto**: `imagens/Jordan.jpeg`, referenciada no hero (`<div class="hero-photo-frame">`). Para trocar, substitua o arquivo mantendo o mesmo nome, ou edite o `src` da tag `<img>`.
+## Como publicar
 
-## Como publicar (grátis)
+O repositório já está publicado via GitHub Pages em `jordansouzadev.github.io`. Qualquer push na branch `main` atualiza o site automaticamente.
 
-**Opção 1 — GitHub Pages**
+## Atualizando o currículo em PDF
 
-```bash
-cd "meu portfolio"
-git init
-git add .
-git commit -m "Portfólio inicial"
-gh repo create meu-portfolio --public --source=. --push
-gh repo edit --enable-pages   # ou ative em Settings > Pages no GitHub
-```
-
-**Opção 2 — Vercel / Netlify**
-
-Arraste a pasta `meu portfolio` para [vercel.com/new](https://vercel.com/new) ou [app.netlify.com/drop](https://app.netlify.com/drop) — publica em segundos, sem configuração.
-
-## Observação sobre os repositórios dos projetos
-
-Os links para `ariane-paiva-studio` e `iron-manager` no site apontam para repositórios **privados** no GitHub. Quem visitar o portfólio sem acesso verá uma página 404. Para mostrar o código a recrutadores, considere:
-
-- Criar um repositório público separado só com um resumo/demo do projeto, ou
-- Conceder acesso de leitura pontual ao repositório privado, ou
-- Gravar um GIF/vídeo curto do sistema funcionando e embutir no portfólio.
+1. Edite `curriculo/index.html`.
+2. Abra o arquivo no Chrome e exporte via `Ctrl+P` → "Salvar como PDF", sobrescrevendo `curriculo/Jordan_Souza_Curriculo.pdf`.
